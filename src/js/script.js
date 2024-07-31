@@ -6,19 +6,19 @@ let hora = data.getHours()
 
 function carregar() {
   if (hora >= 0 && hora < 12) {
-    img.src = "manha.png"
+    img.src = "src/imagens/manha.png"
     msg.innerHTML = `Agora são ${hora} horas`
     document.body.style.background = "#95e3ed"
     titulo.innerHTML = "BOM DIA 🏙️"
 
   } else if (hora >= 12 && hora <= 18) {
-    img.src = "tarde.png"
+    img.src = "src/imagens/tarde.png"
     msg.innerHTML = `Agora são ${hora} horas`
     document.body.style.background = "#d99568"
     titulo.innerHTML = "BOA TARDE 🌇"
 
   } else {
-    img.src = "noite.png"
+    img.src = "src/imagens/noite.png"
     msg.innerHTML = `Agora são ${hora} horas`
     document.body.style.background = "#40719c"
     titulo.innerHTML = "BOA NOITE 🌃"
